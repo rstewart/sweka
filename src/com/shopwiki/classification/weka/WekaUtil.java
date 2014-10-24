@@ -111,10 +111,9 @@ public class WekaUtil {
 		}
 		System.out.println(counts);
 
-		int pad = 20;
-		System.out.print(TextUtil.pad("ATTRIBUTE", pad, false, ' '));
-		for (String value : counts.keySet()) {
-			UTF8.out.print("\t" + value);
+		System.out.printf("%25s", "ATTRIBUTE");
+		for (String key : counts.keySet()) {
+			UTF8.out.printf("%20", key);
 		}
 		System.out.println();
 
